@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-makeVector <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
                 x <<- y
@@ -20,7 +20,7 @@ makeVector <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-cacheinv <- function(x, ...) {
+cacheSolve <- function(x, ...) {
         m <- x$getinv()
         if(!is.null(inv)) {
                 message("getting cached data")
